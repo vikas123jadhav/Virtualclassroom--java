@@ -1,0 +1,101 @@
+body{
+    /*background-image: url("menuBgs.jpg");*/
+    background-color: gray;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  auto;
+    background-position: inherit;
+    background-size: 100%;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.section-heading {
+    text-align:center;
+    color:#102C4E;
+    margin-top: 50px;
+    margin-bottom:70px;
+    font-size: 35px;
+}
+
+/* Sizing for catogeries Containers  */
+.column-4 {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin:20px;
+    height: 180px;
+}
+
+.project-text {
+    text-align:left;
+    font-size:14px;
+}
+
+.i-1 {
+    color: aliceblue;
+    background-image: url("burgers.jpg");
+    background-size: cover;
+}
+
+.i-2 {
+    color: aliceblue;
+    background-image: url("coffe.jpg");
+    background-size: cover;
+}
+
+.i-3 {
+    color: aliceblue;
+    background-image: url("ice cream.jpg");
+    background-size: cover;
+}
+
+.i-4 {
+    color:  aliceblue;
+    background-image: url("noodle.jpg");
+    background-size: cover;
+}
+
+.i-5 {
+    color: aliceblue;
+    background-image: url("pizza.jpg");
+    background-size: cover;
+}
+
+.i-6 {
+    color: aliceblue;
+    background-image: url("sandwish.jpg");
+    background-size: cover;
+}
+
+.i-7 {
+    color: aliceblue;
+    background-image: url("shakes.jpg");
+    background-size: cover;
+}
+
+.i-8 {
+    color: aliceblue;
+    background-image: url("soft drinks.jpg");
+    background-size: cover;
+}
+
+/*
+.tiles {
+    width: 600px;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.tile {
+    width: calc(600px / 3);
+    display: inline-block;
+}
+
+.tile h2 {
+    font-size: 20px;
+}*/
