@@ -18,7 +18,7 @@ public class FacultySignUpEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long fId;
+    private Long fid;
 
     @Column(name = "F_NAME")
     private String  fname;

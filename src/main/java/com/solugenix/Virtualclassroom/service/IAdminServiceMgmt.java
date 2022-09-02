@@ -31,7 +31,7 @@ public interface IAdminServiceMgmt {
 
 
     public String deleteStudentAccById(Long id);
-    public String deleteFacultyAccById(Long id);
-    public String deleteAdminAccById(Long id);
+    public boolean deleteFacultyAccById(Long id);
+    public boolean deleteAdminAccById(Long id);
 
 }

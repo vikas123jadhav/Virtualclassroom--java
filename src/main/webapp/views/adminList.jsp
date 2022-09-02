@@ -51,8 +51,8 @@ pageEncoding="ISO-8859-1"%>
                         <td>${admin.createdDate}</td>
                         <td>${admin.status}</td>
                         <td>
-                            <a href="adminList/editAdminById?aid=${admin.aid}">Edit</a>
-                            <a href="adminList/deleteAdminById?aid=${admin.aid}" onclick="confirm('Do u want to Delete')">Delete</a>
+                            <a href="editAdminById?aid=${admin.aid}">Edit</a>
+                            <a href="deleteAdminById?aid=${admin.aid}" onclick="deleteConfirm()">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>
@@ -67,9 +67,11 @@ pageEncoding="ISO-8859-1"%>
     </c:otherwise>
 </c:choose>
 
-    <blink>
-        <h1 style="color:green;text-align:center"> ${resultInfo}</h1>
-    </blink>
+    <p style="text-align:center">
+        <font color="green"></b> ${adminSucMsg}</font>
+
+        <font color="red"> ${adminErrMsg}</font>
+    </p>
 
 <br>
 <br>

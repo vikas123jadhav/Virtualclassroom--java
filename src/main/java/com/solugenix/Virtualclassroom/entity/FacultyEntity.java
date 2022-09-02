@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Data
 public class FacultyEntity {
-    private Long fId;
+    private Long fid;
 
     private String  fname;
 

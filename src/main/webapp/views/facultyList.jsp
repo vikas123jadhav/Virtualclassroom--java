@@ -57,8 +57,8 @@ pageEncoding="ISO-8859-1"%>
                         <td>${fac.createdDate}</td>
                         <td>${fac.status}</td>
                         <td>
-                            <a href=" ">Edit</a>
-                            <a href=" " onclick="confirm('Do u want to Delete')">Delete</a>
+                            <a href="editAdminById?fid=${fac.fid} ">Edit</a>
+                            <a href="deleteFacultyById?fid=${fac.fid} " onclick="deleteConfirm()">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>
@@ -72,6 +72,12 @@ pageEncoding="ISO-8859-1"%>
         <h1 style="color:red;text-align:center"> NO Faculty Data Found</h1>
     </c:otherwise>
 </c:choose>
+
+<p style="text-align:center">
+    <font color="green"></b> ${facSucMsg}</font>
+
+    <font color="red"> ${facErrMsg}</font>
+</p>
 
 <br>
 <br>

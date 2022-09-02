@@ -34,18 +34,13 @@ public class AdminServiceMgmtImpl implements IAdminServiceMgmt{
 //=========================================================================AdminListController- operations ================================
 
     @Override
-    public String deleteAdminAccById(Long id) {
+    public boolean deleteAdminAccById(Long id) {
         Optional<AdminEntity> opt =adminRepo.findById(id);
-        AdminEntity adminEntity ;
         if(opt.isPresent()){
-            adminEntity = opt.get();
             adminRepo.deleteById(id);
-
-            return "Admin acc Deleted Successfull . Account Details"+ "\n"+adminEntity;
+            return true;
         }
-        else {
-            return "No Admin Acc is Found To Delete having id :: "+ id;
-        }
+        return false;
     }
 
 
@@ -166,22 +161,14 @@ public class AdminServiceMgmtImpl implements IAdminServiceMgmt{
 //=========================================================================FacultyListController- operations ================================
 
     @Override
-    public String deleteFacultyAccById(Long id) {
+    public boolean deleteFacultyAccById(Long id) {
         Optional<FacultySignUpEntity> opt =facultySignupRepo.findById(id);
-        FacultySignUpEntity facEntity ;
 
         if(opt.isPresent()){
-            facEntity = opt.get();
             facultySignupRepo.deleteById(id);
-
-            FacultyEntity fac = new FacultyEntity();
-            BeanUtils.copyProperties(facEntity, fac);
-
-             return "Faculty acc Deleted Successfull . Account Details"+ "\n"+fac;
+            return true;
         }
-        else {
-            return "No Faculty Acc is Found To Delete having id :: "+ id;
-        }
+        return false;
     }
 
 

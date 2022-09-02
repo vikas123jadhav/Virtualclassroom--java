@@ -1,19 +1,21 @@
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
+
 body
 {
     margin:0px;
    /* background-color:#27a465;*/
     color:#f7f7f7;
     font-family:Arial, Helvetica,sans-serif;
-    background-image: url("cafeBg4.jpg");
+    background-image: url("/../images/cafeBg4.jpg");
     height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size:  auto;
     background-position: inherit;
     background-size: 100%;
+    background-color: maroon;
 }
 
 h2{
@@ -21,20 +23,22 @@ h2{
     font-size: 24px;
 }
 
+
+
 hr{
     margin-bottom: 30px;
 }
 
 img.logo{
     border-radius: 200px;
-    width: 50%;
-    height: 40%;
+    width: 40%;
+    height: 25%;
 }
 
 div.container{
-    width: 960px;
-    height: 610px;
-    margin:50px auto;
+    width: 900px;
+    height: 400px;
+    margin:40px auto;
     font-family: 'Droid Serif', serif;
     position:center;
 }
@@ -43,7 +47,7 @@ div.main{
     width: 330px;
     margin-top: 80px;
     float:outside ;
-    padding: 30px 55px 40px;
+    padding: 20px 30px 25px;
     background-color: rgba(187, 255, 184, 0.65);
     border: 10px solid white;
     box-shadow: 0 0 10px;
@@ -55,7 +59,7 @@ div.main{
 }
 
 input[type=text],[type=password] {
-    width: 97.7%;
+    width: 81.7%;
     height: 34px;
     padding-left: 5px;
     margin-bottom: 20px;

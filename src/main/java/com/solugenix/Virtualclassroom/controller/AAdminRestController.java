@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/admin")
+//@RequestMapping("/admin")
 public class AAdminRestController {
 
     @Autowired
@@ -92,10 +92,10 @@ public class AAdminRestController {
     @GetMapping("/showAllAdmin")
     public String showAllAdmins( Map<String,Object> map) throws Exception{
         List<AdminEntity> adminList = adminService.fetchAllAdmin();
-//        System.out.println(adminList);
         map.put("adminList",adminList);
         return "adminList";
     }
+
 
     @GetMapping("/showAllStudents")
     public String showAllStudents(Map<String,Object> map) throws Exception{
