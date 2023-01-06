@@ -6,17 +6,18 @@ import java.util.Date;
 
 @Data
 public class FacultyEntity {
-    private Long fid;
+    private Long id;
+    private String  name;
+    private String role;
+    private String  username;
 
-    private String  fname;
-
-    private String  userName;
-
+    private Integer age;
     private String  subject;
 
     private String  mobileNo;
 
     private String deptno;
+    private String email;
 
     private Date createdDate;
 

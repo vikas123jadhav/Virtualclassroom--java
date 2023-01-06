@@ -2,20 +2,24 @@ package com.solugenix.Virtualclassroom.entity;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class StudentEntity {
 
 
-    private  Long sid;
+    private  Long id;
 
-
-    private  String sname;
-
+    private  String name;
+    private String email;
     private String mobileNo;
-
+    private   String role;
+    private Integer age;
     private  String username;
 
-    private  String createdDate;
+    private String password;
+
+    private Date createdDate;
 
     private String status;
 }

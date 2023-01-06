@@ -12,19 +12,22 @@ import java.util.Date;
 @Table(name="FACULTY_SIGN_UP")
 @Data
 
-@SQLDelete(sql = "UPDATE FACULTY_SIGN_UP SET STATUS='deleted' WHERE FID=?")
+@SQLDelete(sql = "UPDATE FACULTY_SIGN_UP SET STATUS='deleted' WHERE ID=?")
 @Where(clause = "STATUS <> 'deleted' ")
 public class FacultySignUpEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long fid;
+    private Long id;
 
-    @Column(name = "F_NAME")
-    private String  fname;
+    @Column(name="ROLE_ID")
+    private final long  roleid=202L;
+
+    @Column(name = "NAME")
+    private String  name;
 
     @Column(name = "USER_NAME")
-    private String  userName;
+    private String  username;
 
     @Column(name = "PASSWORD")
     private String  password;
@@ -38,6 +41,12 @@ public class FacultySignUpEntity {
     @Column(name="DEPTNO")
     private String deptno;
 
+    @Column(name="AGE")
+    private Integer age;
+
+    @Column(name = "EMAIL")
+    private String email;
+
     @Column(name="CREATED_DATE"  , updatable=false)
     @Temporal(TemporalType.DATE )
     @CreationTimestamp
@@ -45,4 +54,8 @@ public class FacultySignUpEntity {
 
     @Column(name="STATUS")
     private String status="active";
+
+    @Column(name="ROLE")
+    private final String role="faculty";
+
 }

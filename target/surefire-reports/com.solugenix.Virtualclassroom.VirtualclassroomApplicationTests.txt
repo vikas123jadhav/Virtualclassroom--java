@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.solugenix.Virtualclassroom.VirtualclassroomApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.294 s <<< FAILURE! - in com.solugenix.Virtualclassroom.VirtualclassroomApplicationTests
+deleteAccountByIdRoleTest  Time elapsed: 0.015 s  <<< ERROR!
+com.solugenix.Virtualclassroom.exceptions.ResourceNotFoundException: Admin not found to delete on :: 123
+	at com.solugenix.Virtualclassroom.VirtualclassroomApplicationTests.deleteAccountByIdRoleTest(VirtualclassroomApplicationTests.java:184)
+
+updateAdminTest  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.solugenix.Virtualclassroom.VirtualclassroomApplicationTests.updateAdminTest(VirtualclassroomApplicationTests.java:143)
+
